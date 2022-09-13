@@ -1,0 +1,117 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+@import "./transition.scss";
+@import "./element-ui.scss";
+@import "./sidebar.scss";
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  // color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.bt-ccc{
+  padding-top:15px;
+  border-top: 1px solid #ccc;
+}
+
+.navbar {
+  background-color: #1398fa !important;
+}
+
+.m-10 {
+  margin: 10px;
+}
+.sidebar-container{
+  background-color:  #fff !important;
+  color:#000 !important
+}
+.el-menu-item.submenu-title-noDropdown,.el-submenu__title,.el-menu-item{
+  background-color:  #fff !important;
+  color:#000!important
+}
+.sidebar-container .nest-menu .el-submenu > .el-submenu__title, #app .sidebar-container .el-submenu .el-menu-item {
+  min-width: 210px !important;
+  background-color:  #fff !important;
+  color:#000!important
+}
+.sidebar-container .nest-menu .el-submenu > .el-submenu__title:hover, #app .sidebar-container .el-submenu .el-menu-item:hover {
+  background-color: #1398fa!important;
+}
+
+.el-submenu .el-submenu__title:hover{
+  background-color: #1398fa !important;
+}
+.sidebar-container .submenu-title-noDropdown:hover {
+  background-color: #1398fa !important;
+}
+#app .sidebar-container .el-submenu__title:hover {
+  background-color: #1398fa !important;
+}
+
+#app .sidebar-container .submenu-title-noDropdown:hover{
+  background-color: #1398fa !important;
+}
+#app .sidebar-container .el-menu-item.is-active{
+  background-color: #1398fa !important;
+}
+#app .sidebar-container .is-active > .el-submenu__title {
+  color:#000 !important
+}
